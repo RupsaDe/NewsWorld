@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
 		<title>Learn Bootstrap(1)</title>
 		<link rel="stylesheet" href="./css/bootstrap.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -8,7 +11,70 @@
 		<script src="./js/bootstrap.js"></script>
 		<style>.checked {
     color: orange;
-}</style>
+}
+
+/* 
+Extra small devices (portrait phones, less than 544px) 
+
+*/
+#head {font-size:1.99rem;} /*1rem = 16px*/
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+#head {font-size:1.5rem;} /*1rem = 16px*/
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+#head {font-size:2rem;} /*1rem = 16px*/
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+#head {font-size:2.5rem;} /*1rem = 16px*/
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+#head {font-size:3rem;} /*1rem = 16px*/    
+}
+  
+/* Set width to make card deck cards 100% width */
+@media (min-width: 950px) and (max-width:1100px) { 
+#head {font-size:2.75rem;} 
+}
+
+
+#head2 {font-size:1rem;} /*1rem = 16px*/
+/*
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+#head2 {font-size:0.5rem;} /*1rem = 16px*/
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+#head2 {font-size:0.8rem;} /*1rem = 16px*/
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+#head2 {font-size:0.9rem;} /*1rem = 16px*/
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+#head2 {font-size:1rem;} /*1rem = 16px*/    
+}
+ 
+/* Set width to make card deck cards 100% width */
+@media (min-width: 950px) and (max-width:1100px) { 
+#head2 {font-size:2.75rem;} 
+
+
+
+</style>
 	</head>
 <body>
 <section>
@@ -18,50 +84,49 @@
 <div class="row">
 <div class="col-sm-8">
 	<div class="row">
-	<div class="col-sm-7 col-xs-12">
+	<div class="col-sm-8 col-xs-12">
 
  <ul class="nav container" style="font-size: 12px">
  <li class="nav-item">
       <a class="nav-link disabled" href="#"><span id="demo"></span></a>
-    </li></ul>
-    </div>
-
-    <div class="col-sm-5 col-xs-12">
-    <ul class="nav container" style="font-size: 12px">
-    <li class="nav-item">
-      <a class="nav-link" href="#"><span class="text-warning">Subscribe</span></a>
+    </li>
+   <li class="nav-item">
+      <a class="nav-link" href="#"  id="head2"><span class="text-muted">|</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"><span class="text-dark">|</span></a>
+      <a class="nav-link" href="#"  id="head2"><span class="text-warning">Subscribe</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"><span class="text-dark">Sign In</span></a>
+      <a class="nav-link" href="#"  id="head2"><span class="text-dark font-weight-bold">|</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"  id="head2"><span class="text-dark">Sign In</span></a>
     </li>
   </ul></div>
-  </div>
-  </div>
+  </div></div>
+  
   <div class="col-sm-4 col-xs-12 col-md-offset-0">
    <ul class="nav">
     <li class="nav-item">
-      <a class="nav-link" href="#"><span class="fa fa-facebook"></span></a>
+      <a class="nav-link" href="#"><span class="fa fa-facebook text-dark"></span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"><span class="fa fa-twitter"></span></a>
+      <a class="nav-link" href="#"><span class="fa fa-twitter text-dark"></span></a>
     </li>
      <li class="nav-item">
-      <a class="nav-link" href="#"><span class="fa fa-google-plus"></span></a>
+      <a class="nav-link" href="#"><span class="fa fa-google-plus text-dark"></span></a>
     </li>
      <li class="nav-item">
-      <a class="nav-link" href="#"><span class="fa fa-linkedin"></span></a>
+      <a class="nav-link" href="#"><span class="fa fa-linkedin text-dark"></span></a>
     </li>
      <li class="nav-item">
-      <a class="nav-link" href="#"><span class="fa fa-instagram"></span></a>
+      <a class="nav-link" href="#"><span class="fa fa-instagram text-dark"></span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"><span class="fa fa-vimeo"></span></a>
+      <a class="nav-link" href="#"><span class="fa fa-vimeo text-dark"></span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link " href="#"><span class="fa fa-youtube-play"></span></a>
+      <a class="nav-link " href="#"><span class="fa fa-youtube-play text-dark"></span></a>
     </li>
 </ul>
 </div></div>
@@ -78,18 +143,18 @@ document.getElementById("demo").innerHTML =d.toLocaleTimeString()+'-'+d.toDateSt
 <section>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-5"><div class="font-weight-bold" style="font-family: Arial black;letter-spacing: 3px"><h1 class="text-center"><span class="text-warning">NEWS</span>WORLD</h1></div></div>
+			<div class="col-sm-5"><div class="font-weight-bold" style="font-family: Arial black;letter-spacing: 3px"><h1 class="text-center" id="head"><span class="text-warning">NEWS</span>WORLD</h1></div></div>
 			<div class="col-sm-7">
 				<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <ul class="navbar-nav mr-auto">
+  <ul class="navbar-nav mr-auto" id="head2">
     <li class="navbar-text">
       <span class="font-weight-bold text-white">BEST NEWS WORDPRESS</span>
     </li>
   </ul>
-  <ul class="navbar-nav mr-auto"><div class="navbar-text"><span class="nav justify-content-center">
+  <ul class="navbar-nav mr-auto" id="head2"><div class="navbar-text"><span class="nav justify-content-center">
     AD SIZES 728 X 90</span>
   </div></ul>
-  <button type="button" class="btn btn-dark btn-outline-light" style="border-radius:0px;">BUY NOW</button>
+  <button type="button" class="btn btn-dark btn-outline-light" id="head2" style="border-radius:0px;">BUY NOW</button>
 </nav>
 </div>
 		</div>
@@ -125,20 +190,15 @@ document.getElementById("demo").innerHTML =d.toLocaleTimeString()+'-'+d.toDateSt
       <a class="nav-link" href="#">HOMEPAGES</a>
     </li>
     <li>
-    	
-
-<form action="/action_page.php">
+    <form action="/action_page.php">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search" name="search">
+      <input type="text" class="form-control bg-dark" placeholder="Search" name="search">
       <div class="input-group-btn">
         <button class="btn btn-dark" type="submit"><i class="fa fa-search"></i></button>
       </div>
     </div>
   </form>
-
-
-
-    </li>
+ </li>
  </ul>
 </nav>
 </div>
@@ -147,12 +207,14 @@ document.getElementById("demo").innerHTML =d.toLocaleTimeString()+'-'+d.toDateSt
 <section>
 	<div class="jumbotron jumbotron-fluid">
   <div class="container">
+  
 	<ul class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item"><a href="#">Travel</a></li>
-    <li class="breadcrumb-item"><a href=#>Post Single</a></li>
+    <li class="breadcrumb-item"><a href="#" class="text-dark">Home</a></li>
+    <li class="breadcrumb-item"><a href="#" class="text-dark">Travel</a></li>
+    <li class="breadcrumb-item"><a href=# class="text-dark">Post Single</a></li>
   </ul>
-  <h1>Post Single SideBar</h1> 
+  <h1 class="font-weight-bold">&nbsp;Post Single SideBar</h1> 
+  
 </div></div>
 </section>
 
@@ -193,43 +255,42 @@ document.getElementById("demo").innerHTML =d.toLocaleTimeString()+'-'+d.toDateSt
     </ul>
     <ul class="nav justify-content-end">
     <li class="nav-item">
-      <a class="nav-link" href="#"><span class="fa fa-facebook"></span></a>
+      <a class="nav-link" href="#"><span class="fa fa-facebook text-dark"></span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"><span class="fa fa-twitter"></span></a>
+      <a class="nav-link" href="#"><span class="fa fa-twitter text-dark"></span></a>
     </li>
      <li class="nav-item">
-      <a class="nav-link" href="#"><span class="fa fa-pinterest-square"></span></a>
+      <a class="nav-link" href="#"><span class="fa fa-pinterest-square text-dark"></span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"><span class="fa fa-rss"></span></a>
+      <a class="nav-link" href="#"><span class="fa fa-rss text-dark"></span></a>
     </li>
      <li class="nav-item">
-      <a class="nav-link" href="#"><span class="fa fa-heart"></span></a>
+      <a class="nav-link" href="#"><span class="fa fa-heart text-dark"></span></a>
     </li>
 </ul></nav><hr><br>
-<h4>2 Comments</h4><br>
+<h4>2 Comments</h4>
 
-<img class="image-fluid" src="images/news.jpg" style="width:100px; height:100px;float:left;margin:2vw 5vw">
-<blockquote class="blockquote">
+<p><img class="image-fluid" src="images/news.jpg" style="width:100px; height:100px;float:left;margin:3vw 5vw">
+<blockquote>
 <small><i>27 Aug 2016</i></small><br>
     <strong>Brandon Kelley</strong>
-    <button type="button" class="btn btn-dark btn-sm" style="border-radius:0px;float: right;">REPLY</button><br><br><span style="font-size:15px">Neque porro quisquam est, qui dolorem ipsum qula dolor sit amet,consecteur,adipisci velit,sed quia non numquam eius modi tempora incidunt.</span>
-  </blockquote>
-
-	<img class="image-fluid" src="images/news.jpg" style="width:100px; height:100px;float:left;margin:2vw 5vw">
-	<blockquote class="blockquote">
+    <button type="button" class="btn btn-dark btn-sm" style="border-radius:0px;float: right;">REPLY</button><br><br><span style="font-size:14px">Neque porro quisquam est, qui dolorem ipsum qula dolor sit amet,consecteur,adipisci velit,sed quia non numquam eius modi tempora incidunt.</span></p></blockquote>
+  
+	<p><img class="image-fluid" src="images/news.jpg" style="width:100px; height:100px;float:left;margin:3vw 5vw">
+	<blockquote>
 	<small><i>27 Aug 2016</i></small><br>
-    <strong>Brandon Kelley</strong>
-    <button type="button" class="btn btn-outline-dark btn-sm" style="border-radius:0px;float: right;">REPLY</button><br><br><p style="font-size:15px">Neque porro quisquam est, qui dolorem ipsum qula dolor sit amet,consecteur,adipisci velit,sed quia non numquam eius modi tempora incidunt.</p>
-  </blockquote>
+    <strong>Millie Newman</strong>
+    <button type="button" class="btn btn-outline-dark btn-sm" style="border-radius:0px;float: right;">REPLY</button><br><br><p style="font-size:14px">Neque porro quisquam est, qui dolorem ipsum qula dolor sit amet,consecteur,adipisci velit,sed quia non numquam eius modi tempora incidunt.</p>
+  </blockquote></p>
 
-  <img class="image-fluid" src="images/news.jpg" style="width:100px; height:100px;float:left;margin:2vw 5vw">
-	<blockquote class="blockquote">
+ <p> <img class="image-fluid" src="images/news.jpg" style="width:100px; height:100px;float:left;margin:2vw 5vw">
+	<blockquote>
 	<small><i>27 Aug 2016</i></small><br>
-    <strong>Brandon Kelley</strong>
-    <button type="button" class="btn btn-outline-dark btn-sm" style="border-radius:0px;float: right;">REPLY</button><br><br><p style="font-size:15px">Neque porro quisquam est, qui dolorem ipsum qula dolor sit amet,consecteur,adipisci velit,sed quia non numquam eius modi tempora incidunt.</p>
-  </blockquote>
+    <strong>Luke Newton</strong>
+    <button type="button" class="btn btn-outline-dark btn-sm" style="border-radius:0px;float: right;">REPLY</button><br><br><p style="font-size:14px">Neque porro quisquam est, qui dolorem ipsum qula dolor sit amet,consecteur,adipisci velit,sed quia non numquam eius modi tempora incidunt.</p></blockquote></p><br>
+  
 
 <h4>Leave A Comment</h4><br>
 
@@ -284,48 +345,46 @@ document.getElementById("demo").innerHTML =d.toLocaleTimeString()+'-'+d.toDateSt
     </div></div></div><br>
 
 <div class="btn-group btn-block" >
-    <button type="button" class="btn btn-outline-light disabled text-dark" style="width:60%;border-radius: 0"><strong>MOST POPULAR</strong></button>
+    <button type="button" class="btn btn-outline-light disabled text-dark border border-warning border-top-0 border-bottom-0 border-right-0" style="width:60%;border-radius: 0"><strong>MOST POPULAR</strong></button>
     <button type="button" class="btn btn-outline-light disabled" style="width:20%;border-radius: 0"></button>
     <button type="button" class="btn btn-outline-light text-dark" style="width: 10%;border-radius: 0"><i class="fa fa-angle-left"></i></button>
     <button type="button" class="btn btn-outline-light text-dark" style="width: 10%;border-radius: 0"><i class="fa fa-angle-right"></i></button>
-  </div><br>
-<blockquote>
-  <img class="image-fluid" src="images/news.jpg" style="width:60px; height:60px;float:left;margin:1vw 2vw">
+  </div><br><br>
+  <div style="height: 60px"><img class="image-fluid" src="images/news.jpg" style="width:75px; height:60px;float:left;margin:0vw 2vw 1vw 0vw">
 
-    <small><b>TV host's hand impaled on nail in failed magic trick</b></small><br>
+    <b>TV host's hand impaled on nail in failed magic trick</b><br>
     <span style="font-size:10px"><i>December 22, 2016&nbsp;</i>
-    <i class="fa">&#xf086;</i>&nbsp;100</span></blockquote>
+    <i class="fa">&#xf086;</i>&nbsp;100</span></div>
 <br>
-<img class="image-fluid" src="images/news.jpg" style="width:60px; height:60px;float:left;margin:1vw 2vw">
-<blockquote>
-    <small><b>Five ugly truths about Gilmore Girls.</b></small><br>
-    <span style="font-size:10px"><i>December 22, 2016&nbsp;</i>
-    <i class="fa">&#xf086;</i>&nbsp;100</span></blockquote>
+<div style="height: 60px"><img class="image-fluid" src="images/news.jpg" style="width:75px; height:60px;float:left;margin:0vw 2vw 1vw 0vw">
+
+    <b>Five ugly truths about Gilmore Girls.</b><br>
+    <span style="font-size:10px" class="align-bottom"><i>December 22, 2016&nbsp;</i>
+    <i class="fa">&#xf086;</i>&nbsp;100</span></div>
 <br>
-<img class="image-fluid" src="images/news.jpg" style="width:60px; height:60px;float:left;margin:1vw 2vw">
-<blockquote>
-    <small><b>Builled by wedding guests over her dress.</b></small><br>
+<div style="height: 60px"> <img class="image-fluid" src="images/news.jpg" style="width:75px; height:60px;float:left;margin:0vw 2vw 1vw 0">
+
+   <b>Builled by wedding guests over her dress.</b><br>
     <span style="font-size:10px"><i>December 22, 2016&nbsp;</i>
-    <i class="fa">&#xf086;</i>&nbsp;100</span></blockquote>
+    <i class="fa">&#xf086;</i>&nbsp;100</span></div>
 <br>
-<img class="image-fluid" src="images/news.jpg" style="width:60px; height:60px;float:left;margin:1vw 2vw">
-<blockquote>
-    <small><b>One more time?Federer's golden oppurtunity</b></small><br>
+<div style="height: 60px"> <img class="image-fluid" src="images/news.jpg" style="width:75px; height:60px;float:left;margin:0vw 2vw 1vw 0">
+
+    <b>One more time?Federer's golden oppurtunity</b><br>
     <span style="font-size:10px"><i>December 22, 2016&nbsp;</i>
-    <i class="fa">&#xf086;</i>&nbsp;100</span></blockquote>
+    <i class="fa">&#xf086;</i>&nbsp;100</span></div>
 <br>
 
 
 <div class="btn-group btn-block " >
-    <button type="button" class="btn btn-outline-light disabled text-dark " style="width:60%;border-radius: 0"><strong>LATEST REVIEWS</strong></button>
+    <button type="button" class="btn btn-outline-light disabled text-dark border-left border-warning border-top-0 border-bottom-0 border-right-0 " style="width:60%;border-radius: 0;"><strong>LATEST REVIEWS</strong></button>
     <button type="button" class="btn btn-outline-light disabled" style="width:20%;border-radius: 0"></button>
     <button type="button" class="btn btn-outline-light text-dark" style="width: 10%;border-radius: 0"><i class="fa fa-angle-left"></i></button>
     <button type="button" class="btn btn-outline-light text-dark" style="width: 10%;border-radius: 0"><i class="fa fa-angle-right"></i></button>
-  </div><br>
-<blockquote>
-  <img class="image-fluid" src="images/news.jpg" style="width:60px; height:60px;float:left;margin:1vw 2vw">
+  </div><br><br>
+  <img class="image-fluid" src="images/news.jpg" style="width:75px; height:60px;float:left;margin:0vw 2vw 1vw 0">
 
-    <small><b>TV host's hand impaled on nail in failed magic trick</b></small><br>
+    <b>TV host's hand impaled on nail in failed magic trick</b><br>
     <div class="star-rating">
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
@@ -333,87 +392,87 @@ document.getElementById("demo").innerHTML =d.toLocaleTimeString()+'-'+d.toDateSt
         <span class="fa fa-star-o"></span>
         <span class="fa fa-star-o"></span>
       </div>
-    </blockquote>
+    
 <br>
-<img class="image-fluid" src="images/news.jpg" style="width:60px; height:60px;float:left;margin:1vw 2vw">
-<blockquote>
-    <small><b>Five ugly truths about Gilmore Girls.</b></small><br>
+<img class="image-fluid" src="images/news.jpg" style="width:75px; height:60px;float:left;margin: 0vw 2vw 1vw 0">
+
+    <b>Five ugly truths about Gilmore Girls.</b><br>
     <div class="star-rating">
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star-o"></span>
         <span class="fa fa-star-o"></span>
-      </div></blockquote>
+      </div>
 <br>
-<img class="image-fluid" src="images/news.jpg" style="width:60px; height:60px;float:left;margin:1vw 2vw">
-<blockquote>
-    <small><b>One more time?Federer's golden oppurtunity</b></small><br>
+<img class="image-fluid" src="images/news.jpg" style="width:75px; height:60px;float:left;margin:0vw 2vw 1vw 0">
+
+    <b>One more time?Federer's golden oppurtunity</b><br>
     <div class="star-rating">
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star-o"></span>
         <span class="fa fa-star-o"></span>
-      </div></blockquote>
+      </div>
 <br>
-<img class="image-fluid" src="images/news.jpg" style="width:60px; height:60px;float:left;margin:1vw 2vw">
-<blockquote>
-    <small><b>Builled by wedding guests over her dress.</b></small><br>
+<img class="image-fluid" src="images/news.jpg" style="width:75px; height:60px;float:left;margin:0vw 2vw 1vw 0">
+
+    <b> Builled by wedding guests over her dress.</b><br>
    <div class="star-rating">
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star-o"></span>
         <span class="fa fa-star-o"></span>
-      </div></blockquote>
+      </div>
 <br>
 <div class="btn-group btn-block" >
-    <button type="button" class="btn btn-outline-light disabled text-dark" style="width:60%;border-radius: 0"><strong>RECENT COMMENTS</strong></button>
+    <button type="button" class="btn btn-outline-light disabled text-dark border border-warning border-top-0 border-bottom-0 border-right-0" style="width:60%;border-radius: 0"><strong>RECENT COMMENTS</strong></button>
     <button type="button" class="btn btn-outline-light" style="width:20%;border-radius: 0"></button>
     <button type="button" class="btn btn-outline-light text-dark" style="width: 10%;border-radius: 0"><i class="fa fa-angle-left"></i></button>
     <button type="button" class="btn btn-outline-light text-dark" style="width: 10%;border-radius: 0"><i class="fa fa-angle-right"></i></button>
-  </div><br>
-<blockquote class="container">
-  <small><b>Dean Garcia</b><i> on Pedestrian seriously hurt in hit-run near The Parade.</i></small><hr><br>
-  <small><b>Hester Crawford </b><i>on Man accused of bashing wife with baseball bat.</i></small><hr><br>
-  <small><b>Dean Garcia</b><i> on Pedestrian seriously hurt in hit-run near The Parade.</i></small>
+  </div><br><br>
+<blockquote>
+  <b>Dean Garcia</b><i> on Pedestrian seriously hurt in hit-run near The Parade.</i><hr>
+  <b>Hester Crawford </b><i>on Man accused of bashing wife with baseball bat.</i><hr>
+  <b>Dean Garcia</b><i> on Pedestrian seriously hurt in hit-run near The Parade.</i>
     </blockquote>
 
 </div>
 </div>
 </section><br><br>
 
-<section class=" bg-dark text-white">
+<section class=" bg-dark text-white container-fluid">
 <div class="container">
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <ul class="navbar-nav container" style="border-bottom: 2px white">
+<nav class=" navbar navbar-expand-sm bg-dark navbar-dark" style="font-size: 15px;">
+  <ul class="navbar-nav container border-bottom border-light pt-4 pb-4" >
     <li class="nav-item">
-      <a class="nav-link" href="#"><button type="button" class="btn btn-dark fa fa-facebook">&nbsp;&nbsp;FACEBOOK</button></a>
+      <a class="nav-link" href="#" ><span class="fa fa-facebook" ><span style="font-family:Verdana,sans-serif">&nbsp;&nbsp;FACEBOOK</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"><button type="button" class="btn btn-dark fa fa-twitter">&nbsp;&nbsp;TWITTER</button></a>
+      <a class="nav-link" href="#"><span class="fa fa-twitter text-warning"><span style="font-family:Verdana,sans-serif">&nbsp;&nbsp;TWITTER</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"><button type="button" class="btn btn-dark fa fa-google-plus">&nbsp;&nbsp;GOOGLE+</button></a>
+      <a class="nav-link" href="#"><span class="fa fa-google-plus"><span style="font-family:Verdana,sans-serif">&nbsp;&nbsp;GOOGLE+</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"><button type="button" class="btn btn-dark fa fa-linkedin">&nbsp;&nbsp;LINKEDIN</button></a>
+      <a class="nav-link" href="#"><span class="fa fa-linkedin"><span style="font-family:Verdana,sans-serif">&nbsp;&nbsp;LINKEDIN</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"><button type="button" class="btn btn-dark fa fa-instagram">&nbsp;&nbsp;INSTAGRAM</button></a>
+      <a class="nav-link" href="#"><span class="fa fa-instagram"><span style="font-family:Verdana,sans-serif">&nbsp;&nbsp;INSTAGRAM</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"><button type="button" class="btn btn-dark fa fa-vimeo">&nbsp;&nbsp;VIMEO</button></a>
+      <a class="nav-link" href="#"><span class="fa fa-vimeo"><span style="font-family:Verdana,sans-serif">&nbsp;&nbsp;VIMEO</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"><button type="button" class="btn btn-dark fa fa-youtube-play">&nbsp;&nbsp;YOUTUBE</button></a>
+      <a class="nav-link" href="#"><span class="fa fa-youtube-play"><span style="font-family:Verdana,sans-serif">&nbsp;&nbsp;YOUTUBE</span></a>
     </li>
   </ul>
-</nav><hr><br>
+</nav><br>
 <div class="row">
 		<div class="col-sm-4 "><blockquote><div class="font-weight-bold" style="font-family: Arial black;letter-spacing: 3px"><h3><span class="text-warning">NEWS</span>WORLD</h3></div><br>
-		NEWS WORLD is your news, entertainment, music, fashion website.We provide you with the latest breaking news and videos straight from the entertainment industry.<br><br>
+		<span style="color:#b3b3b3">NEWS WORLD is your news, entertainment, music, fashion website.We provide you with the latest breaking news and videos straight from the entertainment industry.</span><br><br>
 		<form>
 		<div class="input-group">
                 <input type="email" class="form-control bg-dark text-white" id="inputEmail3MD" placeholder="Your email"><div class="input-group-btn">
@@ -423,18 +482,18 @@ document.getElementById("demo").innerHTML =d.toLocaleTimeString()+'-'+d.toDateSt
 
 		</div>
 		<div class="col-sm-2"><h5>About Us</h5><br>
-		<a href="#" style="color: white">History</a><br>
+		<a href="#" style="color:#b3b3b3">History</a><br>
 		<a href="#" class="text-warning">Our Team</a><br>
-		<a href="#" style="color: white">Awards</a><br>
-		<a href="#" style="color: white">Safety</a><br>
-		<a href="#" style="color: white">Careers</a>
+		<a href="#" style="color: #b3b3b3">Awards</a><br>
+		<a href="#" style="color:#b3b3b3">Safety</a><br>
+		<a href="#" style="color:#b3b3b3">Careers</a>
 		</div>
         <div class="col-sm-2"><h5>Category</h5><br>
-        <a href="#" style="color: white">Life Style</a><br>
-		<a href="#" style="color: white">Tech</a><br>
-		<a href="#" style="color: white">Sports</a><br>
-		<a href="#" style="color: white">Entertainment</a><br>
-		<a href="#" style="color: white">Travel</a>
+        <a href="#" style="color:#b3b3b3">Life Style</a><br>
+		<a href="#" style="color:#b3b3b3">Tech</a><br>
+		<a href="#" style="color:#b3b3b3">Sports</a><br>
+		<a href="#" style="color:#b3b3b3">Entertainment</a><br>
+		<a href="#" style="color:#b3b3b3">Travel</a>
 		</div>
 
         <div class="col-sm-4">
@@ -443,13 +502,13 @@ document.getElementById("demo").innerHTML =d.toLocaleTimeString()+'-'+d.toDateSt
 <a href="#" style="color: white"><img class="image-fluid" src="images/news.jpg" style="width:60px; height:60px;float:left;margin-right:2vw">
 
     <small><b>Will the sugar tax really make Britain less fat?</b></small><br></a>
-    <span style="font-size:10px"><i>December 22, 2016&nbsp;</i>
+    <span style="font-size:10px; color:#b3b3b3"><i>December 22, 2016&nbsp;</i>
     <i class="fa">&#xf086;</i>&nbsp;100</span></blockquote>
 <br>
 <a href="#" style="color: white"><img class="image-fluid" src="images/news.jpg" style="width:60px; height:60px;float:left;margin-right:2vw">
 <blockquote>
     <small><b>A water-only cocktail bar is opening in London </b></small><br></a>
-    <span style="font-size:10px"><i>December 22, 2016&nbsp;</i>
+    <span style="font-size:10px; color:#b3b3b3"><i>December 22, 2016&nbsp;</i>
     <i class="fa">&#xf086;</i>&nbsp;100</span>
     </blockquote>
 
